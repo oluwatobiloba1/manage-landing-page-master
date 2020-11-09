@@ -1,0 +1,456 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 375px;
+    background-blend-mode: multiply;
+    background-image: url(images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: 450px;
+    background-position-y: -300px;
+    color:  hsl(227, 12%, 61%);
+}
+p{
+    font-size: .65em;
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.manage-wrapper img{
+    width: 6em;
+}
+.illustrate-wrapper img{
+    margin: 0 15px;
+    width: 100%;
+}
+.side-nav{
+    height: 65%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    right: 45px;
+    background-color: hsl(0, 0%, 98%);
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.side-nav a{
+    text-align: center;
+    padding: 18px 0 18px 0;
+    text-decoration: none;
+    font-size: 12px;
+    color: hsl(228, 39%, 23%);
+    display: block;
+    transition: 0.3s;
+}
+.side-nav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.temp-nav{
+    display: none;
+}
+.intro-section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    max-width: 100%;
+    
+}
+.intro-description{
+    display: flex;
+    flex-direction: column;
+}
+.intro-description h1{
+    margin: 0 auto;
+    text-emphasis: none;
+    text-align: center;
+    color: hsl(228, 39%, 23%);
+    font-size: 1.5em;
+}
+.intro-description p{
+    width: 75%;
+    margin: 10px 4em 20px;
+}
+.main-btn{
+    background-color: hsl(12, 88%, 59%);
+    width: 100px;
+    margin: 0 auto;
+    color: hsl(0, 0%, 98%);
+    box-shadow: 0px 10px 5px hsl(13, 100%, 96%);
+}
+.btn{
+    font-size: 8px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    outline: none;
+}
+.feature-section{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    max-width: 100%;
+}
+.feature-section h2{
+    margin: 50px auto 10px;
+    text-emphasis: none;
+    text-align: center;
+    color: hsl(228, 39%, 23%);
+    font-size: 1.2em;
+    width: 70%;
+}
+.feature-section p{
+    width: 80%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.feature-header{
+    display: flex;
+    align-items: center;
+    background-color:hsl(13, 100%, 96%);
+}
+.feature-header p{
+    text-align: center;
+    color: hsl(228, 39%, 23%);
+    font-weight: bold;
+    font-size: .75em;
+}
+.label{
+    background-color: hsl(12, 88%, 59%);
+    color: hsl(0, 0%, 98%);
+    border: none;
+    border-radius: 15px;
+    width: 40px;
+    text-align: center;
+}
+.features{
+    margin: 0;
+    padding: 0;
+}
+.features p{
+    margin: 0;
+}
+.special{
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+}
+.special p{
+    width: 90%;
+    text-align: left;
+}
+.reviews-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.reviews{
+    display: flex;
+    background-color: hsl(0, 0%, 98%);
+    flex-direction: column;
+    margin: 0 auto 20px;
+    text-align: center;
+    align-items: left;
+}
+.hero-wrapper img{
+    width: 70px;
+    margin-top: -10px;
+}
+.reviews-section h1{
+    margin: 10px auto 50px;
+    color: hsl(228, 39%, 23%);
+    text-align: center;
+}
+h3{
+    color: hsl(228, 39%, 23%);
+}
+.bottom-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(12, 88%, 59%);
+    color: hsl(0, 0%, 98%);
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.bottom-section p{
+    font-size: 1.5em;
+    width: 80%;
+    font-weight: bold;
+}
+.bottom-btn{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(12, 88%, 59%);
+    margin: 0 60px;
+    width: 100px;
+}
+.main-footer{
+    background-color: hsl(233, 12%, 13%);
+    width: 100%;
+    margin: 0;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-top: 20px;
+}
+.input-form{
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    height: 25px;
+    width: 70%;
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.input-button{
+    color: hsl(0, 0%, 98%);
+    border: none;
+    border-radius: 50px;
+    height: 25px;
+    width: 50px;
+    background-color: hsl(12, 88%, 59%);
+    outline: none;
+}
+.text-nav{
+    margin-top: 20px;
+    display: flex;
+    font-size: .75em;
+}
+.text-nav ul{
+    list-style: none;
+    margin: 0;
+}
+.text-nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(0, 0%, 98%);
+    padding: .5em .1em;
+}
+.socials{
+    padding: 0;
+    margin: 15px 0;
+}
+.socials a{
+    display: inline-block;
+    padding: .25em .4em;
+    width: 37px;
+}
+.socials li{
+    display: inline;
+}
+.socials ul{
+    margin: 0 1em;
+    padding: 0;
+}
+.bottom-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.bottom-wrapper img{
+    width: 150px;
+}
+
+.attribution { font-size: 10px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 500px){
+    .container{
+        max-width: 95%;
+    }
+    .intro-section{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-grow: 1;
+        padding: 0;
+        max-width: 100%;
+        
+    }
+    .feature-section{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+    .intro-description h1{
+        text-align: left;
+    }
+    .intro-description p{
+        margin: 10px 0 20px 0;
+    }
+    .bottom-section{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .bottom-section p{
+        margin-left: 50px;
+        margin-right: 20px;
+        font-size: 1.5em;
+        width: 300px;
+        text-align: left;
+    }
+    .main-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: .5em;
+    }
+    .footer-content{
+        position: relative;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .bottom-wrapper img{
+        width: 100px;
+        height: 20px;
+    }
+    .socials{
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+    }
+    .socials a{
+        width: 1.5em;
+    }
+    .socials a:hover{
+        color: hsl(12, 88%, 59%);
+    }
+    .text-nav{
+        margin: 0;
+        justify-content: space-between;
+        width: 250px;
+    }
+    .text-nav ul{
+        padding: 0;
+    }
+    .text-nav a:hover{
+        color: hsl(12, 88%, 59%);
+        cursor: pointer;
+    }
+    .reviews-section{
+        margin: 30px 0;
+        width: 90%;
+    }
+    p{
+        font-size: 1em;
+    }
+    .features{
+        width: 700px;
+    }
+    .feature-header p{
+        text-align: left;
+        margin-left: 20px;
+    }
+    .special{
+        margin: 10px 0 10px 60px;
+    }
+    .feature-header{
+        background-color: transparent;
+    }
+    .key-feature p{
+        text-align: left;
+    }
+    .key-feature h2{
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 0;
+        font-size: 2em;
+    }
+    .intro-section{
+        margin-bottom: 50px;
+    }
+    .intro-description h1{
+        margin: 0 40px;
+        text-align: left;
+        font-size: 3em;
+        width: 400px;
+    }
+    .intro-description p{
+        width: 55%;
+        margin: 10px 0 20px 50px;
+    }
+    .intro-description .main-btn{
+        margin: 50px;
+    }
+    .main-btn:hover{
+        background-color: hsl(12, 89%, 82%);
+    }
+    .btn:hover{
+        cursor: pointer;
+    }
+    .input-button:hover{
+        background-color: hsl(12, 89%, 82%);
+        cursor: pointer;
+    }
+    .bottom-btn:hover{
+        background-color: rgb(255, 255, 255);
+    }
+    .temp-nav{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 70%;
+    }
+    .temp-nav li{
+        display: inline;
+    }
+    .temp-nav a{
+        display: inline-block;
+        padding: .5em;
+        font-size: .65em;
+        text-decoration: none;
+        color: hsl(228, 39%, 23%);
+    }
+    .temp-nav a:hover{
+        color: hsl(227, 12%, 61%);
+        cursor: pointer;
+    }
+    .temp-nav .main-btn{
+        margin: 0;
+    }
+    .hamburger{
+        display: none;
+    }
+    .manage-wrapper img{
+        width: 150px;
+    }
+    .input{
+        padding-top: 0;
+    }
+    .reviews{
+        max-width: 500px;
+    }
+}
